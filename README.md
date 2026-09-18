@@ -2,7 +2,7 @@
 
 Bloom is a companion app for managing PCOS, tracking cycle, meals, movement, water, relaxation, and sleep.
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1.  **Clone/Open**: Open the project in the latest version of **Android Studio**.
 2.  **JDK**: Ensure you are using **Java 11** or higher.
@@ -22,7 +22,7 @@ The app follows modern Android development practices:
 *   **Navigation Compose**: Handles transitions between Onboarding and the multi-tab Home Screen.
 *   **Persistent Storage**: Uses `SharedPreferences` (via `UserPreferences.kt`) to store user identity and onboarding status.
 
-## 💰 Ad Implementation Approach
+## Ad Implementation Approach
 
 ### 1. Adaptive Banner Ad
 *   **Component**: A reusable `BannerAd` Composable built with `AndroidView`.
@@ -35,7 +35,7 @@ The app follows modern Android development practices:
 *   **Cold-Start Optimized**: Includes a queuing mechanism (`showAdOnNextLoad`) to show the ad automatically even if it finishes loading *after* the app has started.
 *   **Onboarding Protection**: Ads are strictly disabled during the initial onboarding flow to ensure a seamless first-user experience.
 
-## 🆔 Test Ad IDs Used
+## Test Ad IDs Used
 
 The app is currently in **Test Mode** (`isTestMode = true` in `AdsConfig.kt`).
 
@@ -46,7 +46,7 @@ The app is currently in **Test Mode** (`isTestMode = true` in `AdsConfig.kt`).
 
 *Sample App ID used for testing: `ca-app-pub-3940256099942544~3347511713`*
 
-## ⚠️ Assumptions & Limitations
+## Assumptions & Limitations
 
 1.  **Account Warm-up**: Real ads (Production IDs) may not appear immediately after account creation. AdMob typically requires 24–48 hours to start serving.
 2.  **Test Device Registration**: For physical devices, you may need to add your device's hashed ID to `BloomApplication.kt` if test ads don't appear.
