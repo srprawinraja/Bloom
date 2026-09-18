@@ -14,24 +14,76 @@ val Fraunces = FontFamily(
 )
 
 val PlusJakartaSans = FontFamily(
-    Font(R.font.plusjakarta_sans_regular, FontWeight.Normal)
+    Font(R.font.plusjakarta_sans_regular, FontWeight.Normal),
 )
 
+// Type.kt
+
 val BloomTypography = Typography(
+    // Large Brand Headers (Fraunces)
     headlineLarge = TextStyle(
         fontFamily = Fraunces,
-        fontWeight = FontWeight(600),
+        fontSize = 30.sp,
+        fontWeight = FontWeight.SemiBold,
         fontStyle = FontStyle.Italic,
-        fontSize = 30.sp
+        lineHeight = 30.sp
     ),
+
+    // Medium Brand Headers (Fraunces)
+    headlineMedium = TextStyle(
+        fontFamily = Fraunces,
+        fontSize = 22.sp,
+        fontWeight = FontWeight.SemiBold,
+        fontStyle = FontStyle.Italic,
+        lineHeight = 22.sp
+    ),
+
+    // Section Titles (Plus Jakarta Bold)
     titleLarge = TextStyle(
         fontFamily = PlusJakartaSans,
-        fontWeight = FontWeight.SemiBold,
-        fontSize = 20.sp
+        fontSize = 20.sp,
+        fontWeight = FontWeight.ExtraBold,
+        lineHeight = 28.sp
     ),
-    bodyLarge = TextStyle(
+
+    // Card/Component Titles (Plus Jakarta SemiBold)
+    titleMedium = TextStyle(
         fontFamily = PlusJakartaSans,
+        fontSize = 16.sp,
+        fontWeight = FontWeight.SemiBold,
+        lineHeight = 24.sp
+    ),
+
+    // Normal Body Text
+    bodyMedium = TextStyle(
+        fontFamily = PlusJakartaSans,
+        fontSize = 14.sp,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        lineHeight = 22.4.sp
+    ),
+
+    // Small Metadata/Description
+    bodySmall = TextStyle(
+        fontFamily = PlusJakartaSans,
+        fontSize = 13.sp,
+        fontWeight = FontWeight.Normal,
+        lineHeight = 18.sp
+    ),
+
+    // Buttons and Primary Labels
+    labelLarge = TextStyle(
+        fontFamily = PlusJakartaSans,
+        fontSize = 15.sp,
+        fontWeight = FontWeight.ExtraBold,
+        lineHeight = 15.sp
+    ),
+
+    // Small caps/Overline (e.g. "GOOD MORNING")
+    labelSmall = TextStyle(
+        fontFamily = PlusJakartaSans,
+        fontSize = 11.sp,
+        fontWeight = FontWeight.Bold,
+        letterSpacing = 1.5.sp,
+        lineHeight = 16.sp
     )
 )

@@ -1,4 +1,4 @@
-package com.example.bloom.ui.components
+package com.example.bloom.ui.onboarding.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 fun StepProgressBar(currentStep: Int, totalSteps: Int = 4) {
     Row(
         modifier = Modifier
-            .width(200.dp)
+            .width(400.dp)
             .padding(horizontal = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically
@@ -28,7 +28,7 @@ fun StepProgressBar(currentStep: Int, totalSteps: Int = 4) {
                     .clip(RoundedCornerShape(3.dp))
                     .background(
                         if (index <= currentStep) MaterialTheme.colorScheme.primary
-                        else MaterialTheme.colorScheme.surfaceVariant
+                        else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.12f)
                     )
             )
         }
