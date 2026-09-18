@@ -13,7 +13,7 @@ Bloom is a companion app for managing PCOS, tracking cycle, meals, movement, wat
 5.  **Run**: Build and run the app on an Emulator or a physical device.
     *   *Note*: To see App Open ads, you must complete the onboarding process at least once.
 
-## 🏗 Architecture
+## Architecture
 
 The app follows modern Android development practices:
 *   **Single Activity Architecture**: Uses `MainActivity.kt` as the entry point.
